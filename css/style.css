@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(218, 218, 218);
+    font-family: 'Raleway', sans-serif;
+    height: 200vh;
+}
+/*--------------- NAV ---------------*/
+nav{
+    height: 5rem;
+    width: 100%;
+    background: rgb(187, 187, 187);
+    color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containerNav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*--------------- LOGO ---------------*/
+.logo{
+    font-weight: 900;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    flex: 0.5;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+/*--------------- MENU ---------------*/
+.menuNav{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    flex: 2.2;
+}
+
+.menuNav a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*--------------- PESQUISA ---------------*/
+.pesquisa{
+    margin-left: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+}
+
+.pesquisaHolder{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.pesquisa i{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    cursor: pointer;
+}
+.pesquisa  input{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: none;
+}
+
+/*--------------- footer ---------------*/
+footer{
+    height: 5rem;
+    width: 100%;
+    background: rgb(187, 187, 187);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+/*--------------- main ---------------*/
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerMain{
+    width: 80%;
+    height: 100%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card{
+    background: rgb(255, 255, 255);
+    width: 200px;
+    height: 300px;
+    border-radius: 3px;
+    margin: 20px 20px;
+    margin-right: auto;
+    padding: 20px 10px;
+    position: relative;
+}
+.card h2{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.card .btn{
+    display: flex;
+    width: 100%;
+    transform: translateX(-10px);
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.card .btn button{
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    color: rgb(51, 51, 51);
+    background: rgb(175, 175, 175);
+    cursor: pointer;
+    font-weight: 700;
+}
